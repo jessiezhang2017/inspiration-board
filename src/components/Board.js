@@ -16,10 +16,21 @@ class Board extends Component {
     };
   }
 
+
   render() {
+    const cardList = CARD_DATA.cards.map((card, i)=>{
+      return <Card
+        key={i}
+        text={card.text}
+        emojiName={card.emoji}
+      />
+    });
+
     return (
       <div>
-        Board
+        <ul className="board">
+           {cardList}
+        </ul>
       </div>
     )
   }
@@ -27,7 +38,7 @@ class Board extends Component {
 }
 
 Board.propTypes = {
-
+    cards: PropTypes.array,
 };
 
 export default Board;
