@@ -6,19 +6,20 @@ import './Card.css';
 
 class Card extends Component {
 
-  // constructor(props){
-  //   super(props);
-  //
-  // }
-
-
   render() {
-    name=JSON.stringify(emojiName);
+
     return (
       <div className="card">
         <section className="card__content">
           <p className="card__content-text">{this.props.text}</p>
-          <p className="card__content-emoji">{emoji.getUnicode("heart_eyes")}</p>
+
+          {this.props.emoji && (
+           <p className="card__content-emoji">
+             {emoji.getUnicode(this.props.emoji)
+               ? emoji.getUnicode(this.props.emoji)
+               : this.props.emoji}
+           </p>
+         )}
         </section>
       </div>
     );
