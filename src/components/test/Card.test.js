@@ -9,8 +9,9 @@ describe('card',()=>{
       text="go"
       emoji="heart_eyes"
       key={1}
-      // deletePetCallback ={()=>{}}
-      // selectPetCallback ={()=>{}}
+      id={1}
+      deleteCardCallback={()=>{}}
+
       />);
     expect(wrapper).toMatchSnapshot();
   });

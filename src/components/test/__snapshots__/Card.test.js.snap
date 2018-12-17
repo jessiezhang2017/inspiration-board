@@ -4,7 +4,9 @@ exports[`card will match the Card Snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    deleteCardCallback={[Function]}
     emoji="heart_eyes"
+    id={1}
     text="go"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -33,6 +35,14 @@ ShallowWrapper {
         >
           😍
         </p>
+        <button
+          aria-label="Close"
+          className="card__content-delete-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
       </section>,
       "className": "card",
     },
@@ -53,6 +63,14 @@ ShallowWrapper {
           >
             😍
           </p>,
+          <button
+            aria-label="Close"
+            className="card__content-delete-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Delete
+          </button>,
         ],
         "className": "card__content",
       },
@@ -82,6 +100,21 @@ ShallowWrapper {
           "rendered": "😍",
           "type": "p",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "aria-label": "Close",
+            "children": "Delete",
+            "className": "card__content-delete-btn",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "Delete",
+          "type": "button",
+        },
       ],
       "type": "section",
     },
@@ -106,6 +139,14 @@ ShallowWrapper {
           >
             😍
           </p>
+          <button
+            aria-label="Close"
+            className="card__content-delete-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            Delete
+          </button>
         </section>,
         "className": "card",
       },
@@ -126,6 +167,14 @@ ShallowWrapper {
             >
               😍
             </p>,
+            <button
+              aria-label="Close"
+              className="card__content-delete-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              Delete
+            </button>,
           ],
           "className": "card__content",
         },
@@ -154,6 +203,21 @@ ShallowWrapper {
             "ref": null,
             "rendered": "😍",
             "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "aria-label": "Close",
+              "children": "Delete",
+              "className": "card__content-delete-btn",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Delete",
+            "type": "button",
           },
         ],
         "type": "section",
